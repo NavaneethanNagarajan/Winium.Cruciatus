@@ -111,6 +111,15 @@
         /// <summary>
         /// Возвращает строковое представление стратегии поиска.
         /// </summary>
+        public static ByProperty Type(ControlType value)
+        {
+            return AutomationProperty(AutomationElement.ControlTypeProperty, value);
+        }
+
+        public static ByProperty ClassName(string value)
+        {
+            return AutomationProperty(AutomationElement.ClassNameProperty, value);
+        }
         public abstract override string ToString();
 
         #endregion
